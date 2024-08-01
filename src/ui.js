@@ -20,6 +20,8 @@ const nodeTypes = {
   llm: LLMNode,
   customOutput: OutputNode,
   text: TextNode,
+  // sumNode: SumNode,
+  // fileLoader: FileLoader,
 };
 
 const selector = (state) => ({

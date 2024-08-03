@@ -10,8 +10,14 @@ import { InputNode } from "./nodes/inputNode";
 import { LLMNode } from "./nodes/llmNode";
 import { OutputNode } from "./nodes/outputNode";
 import { TextNode } from "./nodes/textNode";
+import { SumNode } from "./nodes/sumNode";
+import { FileLoader } from "./nodes/fileLoader";
+import { DivideNode } from "./nodes/divideNode";
+import { SubtractNode } from "./nodes/subtractNode";
+import { MultiplyNode } from "./nodes/multiplyNode";
 
 import "reactflow/dist/style.css";
+// import { SumNode } from "./nodes/sumNode";
 
 const gridSize = 20;
 const proOptions = { hideAttribution: true };
@@ -20,8 +26,13 @@ const nodeTypes = {
   llm: LLMNode,
   customOutput: OutputNode,
   text: TextNode,
+  sum: SumNode,
+  multiply: MultiplyNode,
+  divide: DivideNode,
+  fileLoader: FileLoader,
+  subtract: SubtractNode,
+
   // sumNode: SumNode,
-  // fileLoader: FileLoader,
 };
 
 const selector = (state) => ({

@@ -17,8 +17,11 @@ export const PipelineToolbar = () => {
         <DraggableNode type="llm" label="LLM" />
         <DraggableNode type="customOutput" label="Output" />
         <DraggableNode type="text" label="Text" />
-        {/* <DraggableNode type="fileLoader" label="File Loader" /> */}
-        {/* <DraggableNode type="sumNode" label="Sum Node" /> */}
+        <DraggableNode type="fileLoader" label="File Loader" />
+        <DraggableNode type="sum" label="Sum Node" />
+        <DraggableNode type="divide" label="Divide" />
+        <DraggableNode type="multiply" label="Multiply" />
+        <DraggableNode type="subtract" label="subtract" />
       </div>
     </div>
   );

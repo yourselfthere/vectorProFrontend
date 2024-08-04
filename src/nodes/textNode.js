@@ -108,6 +108,9 @@ export const TextNode = ({ id, data }) => {
   return (
     <BaseNode id={id} handles={handles} style={{ backgroundColor: "#E8F5E9" }}>
       <div>
+        <Handle type="source" position={Position.Left} id={`${id}-input`} />
+        <Handle type="source" position={Position.Right} id={`${id}-output`} />
+
         <label>
           Text:
           <textarea
